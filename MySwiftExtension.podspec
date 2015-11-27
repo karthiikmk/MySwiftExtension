@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MySwiftExtension"
-  s.version          = "1.0"
+  s.version          = "1.0.2"
   s.summary          = "A simple Extension for Swift"
 
   s.homepage         = "https://github.com/karthik-ios-dev/MySwiftExtension.git"
