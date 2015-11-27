@@ -1,0 +1,14 @@
+PODS:
+  - MySwiftExtension (0.1.0)
+
+DEPENDENCIES:
+  - MySwiftExtension (from `../`)
+
+EXTERNAL SOURCES:
+  MySwiftExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MySwiftExtension: bb2ee883135505faba06fe422531787ce0c7ad37
+
+COCOAPODS: 0.39.0
