@@ -10,26 +10,12 @@ import UIKit
 import Foundation
 
 
-class Utils {
-        
-    class func getRandom(lower: Int = 0, _ upper: Int = 100) -> Int {
-        return lower + Int(arc4random_uniform(UInt32(upper - lower + 1)))
-    }
-    
-    class func generateUniqueIdentifier() -> String {
-        
-        // will return E621E1F8-C36C-495A-93FC-0C247A3E6E5F
-        return NSUUID().UUIDString
-    }
-}
-
 extension UITableView{
     
     public func scrollToTop(animated animated: Bool){
         scrollRectToVisible(CGRectMake(0, 0, 1, 0), animated: animated)
     }
 }
-
 
 
 public extension NSObject {

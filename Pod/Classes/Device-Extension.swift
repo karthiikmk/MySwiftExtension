@@ -10,16 +10,16 @@ import Foundation
 import UIKit
 
 
-extension NSBundle {
+public extension NSBundle {
     
-    class var applicationVersionNumber: String {
+    var applicationVersionNumber: String {
         if let version = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String {
             return version
         }
         return "Version Number Not Available"
     }
     
-    class var applicationBuildNumber: String {
+    var applicationBuildNumber: String {
         if let build = NSBundle.mainBundle().infoDictionary?["CFBundleVersion"] as? String {
             return build
         }

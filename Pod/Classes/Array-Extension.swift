@@ -10,7 +10,7 @@ import UIKit
 
 //MARK:My Extension
 
-extension Array{
+public extension Array{
     
     
     var isEmpty : Bool{
@@ -29,7 +29,7 @@ extension Array{
         return self.removeFirst()
     }
     
-    public mutating func flushArray(){
+    mutating func flushArray(){
         // will give empty Arr
         return self.removeAll()
     }

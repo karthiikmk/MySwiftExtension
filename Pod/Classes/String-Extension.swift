@@ -6,8 +6,52 @@
 
 import UIKit
 
+
+//MARK: BASIC STRING EXTENSION
 public extension String{
     
+    var length: Int {
+        return self.characters.count
+    }
+    
+    func trim() -> String {
+        return self.stringByTrimmingCharactersInSet(.whitespaceCharacterSet())
+    }
+    
+    func trimNewLine() -> String {
+        return self.stringByTrimmingCharactersInSet(.whitespaceAndNewlineCharacterSet())
+    }
+    
+    func contains(str:String?)->Bool{
+        return (self.rangeOfString(str!) != nil) ? true : false
+    }
+    
+    func replaceCharacterWith(characters: String, toSeparator: String) -> String {
+        let characterSet = NSCharacterSet(charactersInString: characters)
+        let components = self.componentsSeparatedByCharactersInSet(characterSet)
+        let result = components.joinWithSeparator(toSeparator)
+        return result
+    }
+    
+    func wipeCharacters(characters: String) -> String {
+        return self.replaceCharacterWith(characters, toSeparator: "")
+    }
+    
+    func replace(find findStr: String, replaceStr: String) -> String{
+        return self.stringByReplacingOccurrencesOfString(findStr, withString: replaceStr, options: NSStringCompareOptions.LiteralSearch, range: nil)
+    }
+    
+    func splitStringWithLimit(delimiter:String?="", limit:Int=0) -> [String]{
+        let arr = self.componentsSeparatedByString((delimiter != nil ? delimiter! : ""))
+        return Array(arr[0..<(limit > 0 ? min(limit, arr.count) : arr.count)])
+        
+        // use : print(s.split(",", limit:2))  //->["part1","part2"]
+    }
+    
+    func createURL() -> NSURL{
+        return NSURL(string: self)!
+    }
+ 
     func isEmailValid(email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
@@ -18,18 +62,7 @@ public extension String{
 }
 
 
-
-protocol StringType{
-    var characters: String.CharacterView { get }
-}
-
-extension String : StringType{
-    
-}
-
-
-//MARK: to int float long number
-
+//MARK: STRING to CONVERSION
 public extension String{
     
     var toFloat : Float{
@@ -78,7 +111,19 @@ public extension String{
     }
 }
 
-//MARK: Spliting string
+
+//MARK:STRING PROTOCOL EXTENSION
+
+protocol StringType{
+    var characters: String.CharacterView { get }
+}
+
+extension String : StringType{
+    
+}
+
+
+//MARK:STRING SUB_SCTRIPT
 
 extension String{
     
@@ -101,7 +146,7 @@ extension String{
 }
 
 
-//MARK:Comparision
+//MARK:STIRNG COMPARISION
 extension String{
     
     public func rangeFromNSRange(nsRange : NSRange) -> Range<String.Index>? {
@@ -186,17 +231,11 @@ extension String{
     }
     
     private var vowels: [String]{
-        get
-        {
-            return ["a", "e", "i", "o", "u"]
-        }
+        return ["a", "e", "i", "o", "u"]
     }
     
     private var consonants: [String]{
-        get
-        {
-            return ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"]
-        }
+        return ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"]
     }
     
     public func pluralize(count: Int) -> String
@@ -246,50 +285,5 @@ extension String{
     }
     
 }
-//MARK: Basics
-public extension String{
-    
-    var length: Int {
-        return self.characters.count
-    }
-    
-    func trim() -> String {
-        return self.stringByTrimmingCharactersInSet(.whitespaceCharacterSet())
-    }
-    
-    func trimNewLine() -> String {
-        return self.stringByTrimmingCharactersInSet(.whitespaceAndNewlineCharacterSet())
-    }
-    
-    func contains(str:String?)->Bool{
-        return (self.rangeOfString(str!) != nil) ? true : false
-    }
-    
-    func replaceCharacterWith(characters: String, toSeparator: String) -> String {
-        let characterSet = NSCharacterSet(charactersInString: characters)
-        let components = self.componentsSeparatedByCharactersInSet(characterSet)
-        let result = components.joinWithSeparator(toSeparator)
-        return result
-    }
-    
-    func wipeCharacters(characters: String) -> String {
-        return self.replaceCharacterWith(characters, toSeparator: "")
-    }
-    
-    func replace(find findStr: String, replaceStr: String) -> String{
-        return self.stringByReplacingOccurrencesOfString(findStr, withString: replaceStr, options: NSStringCompareOptions.LiteralSearch, range: nil)
-    }
-    
-    func splitStringWithLimit(delimiter:String?="", limit:Int=0) -> [String]{
-        let arr = self.componentsSeparatedByString((delimiter != nil ? delimiter! : ""))
-        return Array(arr[0..<(limit > 0 ? min(limit, arr.count) : arr.count)])
-        
-        // use : print(s.split(",", limit:2))  //->["part1","part2"]
-    }
-    
-    func createURL() -> NSURL{
-        return NSURL(string: self)!
-    }
-    
-}
+
 

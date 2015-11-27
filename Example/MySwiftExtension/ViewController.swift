@@ -15,7 +15,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var arr = [1,2]
+        
+        var dict = ["one" : 1]
+
         print("Test Extension")
+        
+        var bundle = NSBundle()
+    
+        var date1 = NSDate()
+        var date2 = NSDate()
+        
+        
+        if date1 > date2{
+            
+        }
+        //date.dateByAddingWeeks(<#T##weeks: Int##Int#>)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -9,56 +9,56 @@
 import UIKit
 
 //MARK: DATE EXTENSIONS
-extension NSDate{
+public extension NSDate{
     
     // Addings
-    public func daysBetweenDate(date:NSDate) -> Int {
+    func daysBetweenDate(date:NSDate) -> Int {
         return NSCalendar.gregorianCalendar().components(.Day, fromDate: self, toDate: date, options: []).day
     }
-    public func dateByAddingDays(days: Int) -> NSDate {
+    func dateByAddingDays(days: Int) -> NSDate {
         return NSCalendar.gregorianCalendar().dateByAddingUnit(.Day, value: days, toDate: self, options: [])!
     }
-    public func dateByAddingWeeks(weeks: Int) -> NSDate {
+    func dateByAddingWeeks(weeks: Int) -> NSDate {
         return NSCalendar.gregorianCalendar().dateByAddingUnit(.WeekOfYear, value: weeks, toDate: self, options: [])!
     }
-    public func dateByAddingMonths(months: Int) -> NSDate {
+    func dateByAddingMonths(months: Int) -> NSDate {
         return NSCalendar.gregorianCalendar().dateByAddingUnit(.Month, value: months, toDate: self, options: [])!
     }
-    public func dateBySubtractingDays(days: Int) -> NSDate {
+    func dateBySubtractingDays(days: Int) -> NSDate {
         return NSCalendar.gregorianCalendar().dateByAddingUnit(.Day, value: -days, toDate: self, options: [])!
     }
-    public func dateBySubtractingWeeks(weeks: Int) -> NSDate {
+    func dateBySubtractingWeeks(weeks: Int) -> NSDate {
         return NSCalendar.gregorianCalendar().dateByAddingUnit(.WeekOfYear, value: -weeks, toDate: self, options: [])!
     }
-    public func dateBySubtractingMonths(months: Int) -> NSDate {
+    func dateBySubtractingMonths(months: Int) -> NSDate {
         return NSCalendar.gregorianCalendar().dateByAddingUnit(.Month, value: -months, toDate: self, options: [])!
     }
     
     
     // counts Bw dats  (days,weeks,monts,years)
-    public func hoursFrom(date:NSDate) -> Int{
+    func hoursFrom(date:NSDate) -> Int{
         return NSCalendar.currentCalendar().components(.Hour, fromDate: date, toDate: self, options: []).hour
     }
-    public func minutesFrom(date:NSDate) -> Int{
+    func minutesFrom(date:NSDate) -> Int{
         return NSCalendar.currentCalendar().components(.Minute, fromDate: date, toDate: self, options: []).minute
     }
-    public func secondsFrom(date:NSDate) -> Int{
+    func secondsFrom(date:NSDate) -> Int{
         return NSCalendar.currentCalendar().components(.Second, fromDate: date, toDate: self, options: []).second
     }
-    public func yearsFrom(date:NSDate) -> Int{
+    func yearsFrom(date:NSDate) -> Int{
         return NSCalendar.currentCalendar().components(.Year, fromDate: date, toDate: self, options: []).year
     }
-    public func monthsFrom(date:NSDate) -> Int{
+    func monthsFrom(date:NSDate) -> Int{
         return NSCalendar.currentCalendar().components(.Month, fromDate: date, toDate: self, options: []).month
     }
-    public func weeksFrom(date:NSDate) -> Int{
+    func weeksFrom(date:NSDate) -> Int{
         return NSCalendar.currentCalendar().components(.WeekOfYear, fromDate: date, toDate: self, options: []).weekOfYear
     }
-    public func daysFrom(date:NSDate) -> Int{
+    func daysFrom(date:NSDate) -> Int{
         return NSCalendar.currentCalendar().components(.Day, fromDate: date, toDate: self, options: []).day
     }
     
-    public func offsetFrom(date:NSDate) -> String {
+    func offsetFrom(date:NSDate) -> String {
         if yearsFrom(date)   > 0 { return "\(yearsFrom(date))y"   }
         if monthsFrom(date)  > 0 { return "\(monthsFrom(date))M"  }
         if weeksFrom(date)   > 0 { return "\(weeksFrom(date))w"   }
@@ -70,19 +70,19 @@ extension NSDate{
     }
     
     //comparisions
-    public func isEqualsTo(date: NSDate) -> Bool {
+    func isEqualsTo(date: NSDate) -> Bool {
         return self.compare(date) == NSComparisonResult.OrderedSame
     }
-    public func isGreaterThan(date: NSDate) -> Bool {
+    func isGreaterThan(date: NSDate) -> Bool {
         // today.isGreaterThan(yesterday)
         return self.compare(date) == NSComparisonResult.OrderedDescending
     }
-    public func isLessThan(date: NSDate) -> Bool {
+    func isLessThan(date: NSDate) -> Bool {
         // today.isLessThan(Tomorrow)
         return self.compare(date) == NSComparisonResult.OrderedAscending
     }
     // date => String
-    public func toString(format: String = "yyyy-MM-dd HH:mm:ss") -> String{
+    func toString(format: String = "yyyy-MM-dd HH:mm:ss") -> String{
         let formatter = NSDateFormatter()
         formatter.dateFormat = format
         return formatter.stringFromDate(self)
