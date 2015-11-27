@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		341BD5647FF26DCBA57CE755B34DEF0E /* MySwiftExtension.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D249F2EC992DE75FC338058A02D33EC7 /* MySwiftExtension.bundle */; };
-		39F313101B7027A0E9D712B5063F8791 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C66478ECB89D9150FE443E36954D5E /* ReplaceMe.swift */; };
+		39F313101B7027A0E9D712B5063F8791 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C66478ECB89D9150FE443E36954D5E /* String-Extension.swift */; };
 		3D264DB638A71AB282785ADB37171CF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		58EE864276EB1B9515B1CB2EC1028461 /* Pods-MySwiftExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F61552965C10F762E3844369B1087 /* Pods-MySwiftExtension_Example-dummy.m */; };
 		A6BEAA7F03B8DFC7F391607F62CA6C0C /* MySwiftExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2C20F764CA2997B3792A647545608 /* MySwiftExtension-dummy.m */; };
@@ -62,7 +62,7 @@
 		71CEAE1F15000EB41F1C8C170D3D5172 /* Pods-MySwiftExtension_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MySwiftExtension_Example-resources.sh"; sourceTree = "<group>"; };
 		721814C2B11573273D7317BCB89A9A10 /* MySwiftExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MySwiftExtension-prefix.pch"; sourceTree = "<group>"; };
 		7D1D7D1474D76688C4C13AC3CE1D3A3B /* Pods-MySwiftExtension_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MySwiftExtension_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		83C66478ECB89D9150FE443E36954D5E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		83C66478ECB89D9150FE443E36954D5E /* String-Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
 		8BD341106F7D49FD87CE9455105663D0 /* Pods-MySwiftExtension_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MySwiftExtension_Tests.modulemap"; sourceTree = "<group>"; };
 		8EF2C20F764CA2997B3792A647545608 /* MySwiftExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MySwiftExtension-dummy.m"; sourceTree = "<group>"; };
 		92BFCBB620859312BFEF0704BE963A9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 		D45DC31E693C4E3E86B574353AF1DD36 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				83C66478ECB89D9150FE443E36954D5E /* ReplaceMe.swift */,
+				83C66478ECB89D9150FE443E36954D5E /* String-Extension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -424,7 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6BEAA7F03B8DFC7F391607F62CA6C0C /* MySwiftExtension-dummy.m in Sources */,
-				39F313101B7027A0E9D712B5063F8791 /* ReplaceMe.swift in Sources */,
+				39F313101B7027A0E9D712B5063F8791 /* String-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
