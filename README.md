@@ -1,4 +1,6 @@
 # MySwiftExtension
+  
+  This Library is made to provide some useful extension / Helpers that can be used anywhere quickly and easily in order to reduce time and Googling !!!
 
 [![CI Status](http://img.shields.io/travis/karthik-dev/MySwiftExtension.svg?style=flat)](https://travis-ci.org/karthik-dev/MySwiftExtension)
 [![Version](https://img.shields.io/cocoapods/v/MySwiftExtension.svg?style=flat)](http://cocoapods.org/pods/MySwiftExtension)
@@ -11,18 +13,48 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Swift 2 or later
+iOS 8.0 or later
+  
 ## Installation
 
-MySwiftExtension is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+CocoaPods 
 
-```ruby
-pod "MySwiftExtension"
-```
+CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
+
+$ gem install cocoapods
+
+CocoaPods 0.38.0+ is required to build MySwiftExtension
+
+Add pod MySwiftExtension to your Podfile:
+
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'MySwiftExtension'
+
+Then, run the following command:
+
+$ pod install
+
+##Usage
+
+import MySwiftExtension
+
+let str = "Hello World !!"
+
+// To Trim the string 
+
+str.trim()
+
+// To get String Length
+
+str.length()
 
 ## Author
 
-karthik-dev, mkkarthiik@gmail.com
+karthik MK, mkkarthiik@gmail.com
 
 ## License
 
