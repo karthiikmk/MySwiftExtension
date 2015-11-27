@@ -1,16 +1,15 @@
 {
   "name": "MySwiftExtension",
-  "version": "0.1.0",
-  "summary": "A short description of MySwiftExtension.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/MySwiftExtension",
+  "version": "1.0",
+  "summary": "A simple Extension for Swift",
+  "homepage": "https://github.com/karthik-ios-dev/MySwiftExtension.git",
   "license": "MIT",
   "authors": {
     "karthik-dev": "mkkarthiik@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/MySwiftExtension.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/karthik-ios-dev/MySwiftExtension.git",
+    "tag": "1.0"
   },
   "platforms": {
     "ios": "8.0"

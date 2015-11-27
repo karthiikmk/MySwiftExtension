@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212024EF18DA96E918CABCE10543981E /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ECFA32E9014989D2F0D87EC517F504 /* String-Extension.swift */; };
+		251130921C088A3300D3FA1B /* Number-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251130911C088A3300D3FA1B /* Number-Extension.swift */; };
+		251130981C088A4000D3FA1B /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251130931C088A4000D3FA1B /* Array-Extension.swift */; };
+		251130991C088A4000D3FA1B /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251130941C088A4000D3FA1B /* Date-Extension.swift */; };
+		2511309A1C088A4000D3FA1B /* Device-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251130951C088A4000D3FA1B /* Device-Extension.swift */; };
+		2511309B1C088A4000D3FA1B /* Dictionary-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251130961C088A4000D3FA1B /* Dictionary-Extension.swift */; };
+		2511309C1C088A4000D3FA1B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251130971C088A4000D3FA1B /* Extensions.swift */; };
 		341BD5647FF26DCBA57CE755B34DEF0E /* MySwiftExtension.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D249F2EC992DE75FC338058A02D33EC7 /* MySwiftExtension.bundle */; };
-		39F313101B7027A0E9D712B5063F8791 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C66478ECB89D9150FE443E36954D5E /* String-Extension.swift */; };
 		3D264DB638A71AB282785ADB37171CF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		46949FD2D5DE12202CC5763204A43933 /* MySwiftExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2C20F764CA2997B3792A647545608 /* MySwiftExtension-dummy.m */; };
 		58EE864276EB1B9515B1CB2EC1028461 /* Pods-MySwiftExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F61552965C10F762E3844369B1087 /* Pods-MySwiftExtension_Example-dummy.m */; };
-		A6BEAA7F03B8DFC7F391607F62CA6C0C /* MySwiftExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2C20F764CA2997B3792A647545608 /* MySwiftExtension-dummy.m */; };
 		AE3D1177E40480EA677CABC9EC777C41 /* Pods-MySwiftExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C3E84621EA15A5106DF7A4027790998 /* Pods-MySwiftExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B208C0BC188E464DDB68B96725EA3EF3 /* MySwiftExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 289D4C734430E768DC0C3ABF5AC3B8F4 /* MySwiftExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEE479899C5E961DBCBC473421478E35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -48,6 +54,12 @@
 		0068A032DB1972D8C3CB86EE0D9C3728 /* Pods-MySwiftExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MySwiftExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0277B684561F7A1D10643D66AB611253 /* Pods-MySwiftExtension_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MySwiftExtension_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		144230D1BC2F8F8F7535FE26173C8564 /* MySwiftExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MySwiftExtension.modulemap; sourceTree = "<group>"; };
+		251130911C088A3300D3FA1B /* Number-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number-Extension.swift"; sourceTree = "<group>"; };
+		251130931C088A4000D3FA1B /* Array-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array-Extension.swift"; sourceTree = "<group>"; };
+		251130941C088A4000D3FA1B /* Date-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
+		251130951C088A4000D3FA1B /* Device-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device-Extension.swift"; sourceTree = "<group>"; };
+		251130961C088A4000D3FA1B /* Dictionary-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary-Extension.swift"; sourceTree = "<group>"; };
+		251130971C088A4000D3FA1B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		289D4C734430E768DC0C3ABF5AC3B8F4 /* MySwiftExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MySwiftExtension-umbrella.h"; sourceTree = "<group>"; };
 		38BD66EC1561C752788195FA8949EEEF /* Pods-MySwiftExtension_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MySwiftExtension_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		396BEE0FA63B7263641D82E7E19A0391 /* Pods-MySwiftExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MySwiftExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +74,7 @@
 		71CEAE1F15000EB41F1C8C170D3D5172 /* Pods-MySwiftExtension_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MySwiftExtension_Example-resources.sh"; sourceTree = "<group>"; };
 		721814C2B11573273D7317BCB89A9A10 /* MySwiftExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MySwiftExtension-prefix.pch"; sourceTree = "<group>"; };
 		7D1D7D1474D76688C4C13AC3CE1D3A3B /* Pods-MySwiftExtension_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MySwiftExtension_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		83C66478ECB89D9150FE443E36954D5E /* String-Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
+		89ECFA32E9014989D2F0D87EC517F504 /* String-Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
 		8BD341106F7D49FD87CE9455105663D0 /* Pods-MySwiftExtension_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MySwiftExtension_Tests.modulemap"; sourceTree = "<group>"; };
 		8EF2C20F764CA2997B3792A647545608 /* MySwiftExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MySwiftExtension-dummy.m"; sourceTree = "<group>"; };
 		92BFCBB620859312BFEF0704BE963A9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,7 +144,7 @@
 		2672FCA695A8A421D35ACAEBB86ECD42 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D45DC31E693C4E3E86B574353AF1DD36 /* Classes */,
+				E17EBDF048C922B35CC72E2F2992338A /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -238,10 +250,16 @@
 			path = "Target Support Files/Pods-MySwiftExtension_Tests";
 			sourceTree = "<group>";
 		};
-		D45DC31E693C4E3E86B574353AF1DD36 /* Classes */ = {
+		E17EBDF048C922B35CC72E2F2992338A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				83C66478ECB89D9150FE443E36954D5E /* String-Extension.swift */,
+				89ECFA32E9014989D2F0D87EC517F504 /* String-Extension.swift */,
+				251130931C088A4000D3FA1B /* Array-Extension.swift */,
+				251130941C088A4000D3FA1B /* Date-Extension.swift */,
+				251130951C088A4000D3FA1B /* Device-Extension.swift */,
+				251130961C088A4000D3FA1B /* Dictionary-Extension.swift */,
+				251130971C088A4000D3FA1B /* Extensions.swift */,
+				251130911C088A3300D3FA1B /* Number-Extension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -333,7 +351,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 680771856659592DFFD32CEAAEE82E37 /* Build configuration list for PBXNativeTarget "MySwiftExtension" */;
 			buildPhases = (
-				96774B3F109FFBB38B4891EEFE8C16FC /* Sources */,
+				704C683A88E6B9341A56C6F382D4AEC4 /* Sources */,
 				AFF0C7AA681C2E7DC137CA7F5BCB06DB /* Frameworks */,
 				2EE2E24F62AE23AEC9D634123A882B99 /* Resources */,
 				48FF2D1A768D10118A292085C0DE6A59 /* Headers */,
@@ -412,19 +430,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		704C683A88E6B9341A56C6F382D4AEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46949FD2D5DE12202CC5763204A43933 /* MySwiftExtension-dummy.m in Sources */,
+				251130981C088A4000D3FA1B /* Array-Extension.swift in Sources */,
+				2511309B1C088A4000D3FA1B /* Dictionary-Extension.swift in Sources */,
+				2511309C1C088A4000D3FA1B /* Extensions.swift in Sources */,
+				251130921C088A3300D3FA1B /* Number-Extension.swift in Sources */,
+				251130991C088A4000D3FA1B /* Date-Extension.swift in Sources */,
+				212024EF18DA96E918CABCE10543981E /* String-Extension.swift in Sources */,
+				2511309A1C088A4000D3FA1B /* Device-Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D3FD041CF896DB9EB13B62A15809A51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		96774B3F109FFBB38B4891EEFE8C16FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A6BEAA7F03B8DFC7F391607F62CA6C0C /* MySwiftExtension-dummy.m in Sources */,
-				39F313101B7027A0E9D712B5063F8791 /* String-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

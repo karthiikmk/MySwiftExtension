@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MySwiftExtension
+
 
 class ViewController: UIViewController {
 
